@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="web, design, fron-end, developer, web development">
+  <meta name="description" content="front-end website project">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (min-width: 1100px)" href="css/widescreen.css">
+  <script src="https://kit.fontawesome.com/1aa46dc397.js" crossorigin="anonymous"></script> 
+  <script src="js/blink.js" > </script>
+  <title>My Website</title>
+  <!--Leave let counter 0 outside the function. v1 -->
+  <script>
+     let counter = 0;
+    function count(){
+      counter++;
+    document.querySelector('#result').innerHTML = counter;
+    }
+   
+  </script>
+</head>
+<body>
+  <form onsubmit="count(); return false;" >
+   
+    <input id="no" type="submit" >
+  </form>
+  <div id="result">
+    0
+
+  </div>
+
+  <br>
+  //////////////the same differnt version//////test////////////////////////////////
+  <br>
+  
+</head>
+<body>
+  <form >
+   <input id="no" type="submit" >
+   <button id="noo">here</button>
+  </form>
+  <div id="result4">
+    0
+  </div>
+  <script>
+    let counter1 = 0;
+    
+      document.querySelector('#noo').onclick = function()
+      {
+        counter1++;
+        document.querySelector('#result4').innerHTML = counter1;
+        return false;
+      }
+    
+     
+    </script>
+
+
+  <br>
+  //////////////the same differnt version//////test////////////////////////////////
+  <br>
+  <div>
+    <button id="btn" >hh</button>
+    <div id="result3">
+      0
+    </div>
+  </div>
+  <script>
+  
+  let counter2 = 0;
+  
+    document.querySelector('#btn').onclick = function()
+    {
+      counter2++;
+    document.querySelector('#result3').innerHTML = counter2;
+    
+    return false;
+    }
+  
+   
+  </script>
+  <br>
+  ////////////////////////////////////////////////////
+  <br>
+<hr>
+  <button id="r">R</button>
+  <button id="g" >G</button>
+  <button id="b">B</button>
+  <script>
+let body = document.querySelector('body');
+document.querySelector('#r').onclick = function(){
+  body.style.backgroundColor="red";
+}
+document.querySelector('#g').onclick = function(){
+  body.style.backgroundColor="green";
+}
+document.querySelector('#b').onclick = function(){
+  body.style.backgroundColor="blue";
+}
+  </script>
+<br>
+///////////////////////////////////////////////////////////
+<br>
+
+<p>text onchange anytime i changed the value of a menu</p>
+<select>
+  <option value="small">s</option>
+  <option value="initial" selected>m</option>
+  <option value="large">l</option>
+</select>
+<br>
+onchange any time it changed the value.
+<br>
+<script>
+  document.querySelector('select').onchange = function(){
+    document.querySelector('p').style.fontSize = this.value;
+  }
+</script>
+
+
+<div></div>
+<br><br><hr>
+
+
+<br>
+////////////////////////////////////////////////////
+<br>
+<Script>
+  function greet2(){
+    let name = document.querySelector('#t').value;
+    if (name === '')
+    {
+      name = 'world';
+    }
+      //alert('Hello,' + name);
+      document.querySelector('#result2').innerHTML = 'Hello,' + name + '!'; 
+  }
+
+
+</Script>
+<form onsubmit="greet2(); return false;">
+  <input id="t" type="text" placeholder="write here" >
+  <input id="s" type="submit" value="sdsd" >
+</form>
+<div id="result2">
+  hello
+</div>
+
+
+<br>
+////////////////////////////////////////////////////
+<br>
+
+<!-- working well renmaing (form) works well does not effect the result, onsubmit (type submit text field
+  takes text from text field and subitted)  -->
+<h4>  Working well renmaing (form) works well does not effect the result, onsubmit (type submit text field
+  takes text from text field and subitted</h4>
+
+<form7 onsubmit="greet5(); return false;">
+  <input id="tt" type="text" placeholder="write here" >
+  <input id="s" type="submit" value="sdsd" >
+</form7>
+<div id="result5">
+  hello
+</div>
+<Script>
+  function greet5(){
+    let name1 = document.querySelector('#tt').value;
+    if (name1 === '')
+    {
+      name1 = 'world';
+    }
+      
+      document.querySelector('#result5').innerHTML = 'Hello,' + name1 + '!'; 
+  }
+
+
+</Script>
+
+<hr>
+<!--click count repeat-->
+<br>
+<h4>  click count repeat</h4>
+<script>
+
+let count01 = 0;
+function f01counter(){
+  count01++
+  document.querySelector('#zero1').innerHTML = count01;
+  return false;
+}
+</script>
+<div >
+  <button onclick="f01counter();" id="btn01"> click count repeat</button>
+  <h2 id="zero1">
+    0
+  </h2>
+</div >
+
+<hr>
+<!--click count repeat 2 v script under the HTML-->
+<h4>click count repeat 2 diffrent version script under the HTML</h4>
+
+
+  
+<div>
+  <button  id="btn02" >this is btn</button>
+</div>
+<div>
+  <h3 id="zero02">0</h3>
+</div>
+<script>
+  let count02 = 0;
+    document.querySelector('#btn02').onclick = function(){
+      count02++;
+      document.querySelector('#zero02').innerHTML = count02;
+    }
+  
+  </script>
+
+
+<hr>
+<br>
+
+<div id="blink" > hello world</div>
+
+
+<br>
+<hr>
+<script>
+  //works.
+  //write : weire in html page get geolocation
+  /*navigator.geolocation.getCurrentPosition(function(position){
+    document.write(position.coords.latitude + ',' + position.coords.longitude);
+  });
+*/
+</script>
+
+
+<script>
+  //works.
+ /*
+  navigator.geolocation.getCurrentPosition(function(position) {
+      document.body.innerHTML = 'You are here: ' + position.coords.latitude + ', ' + position.coords.longitude;
+  });
+*/
+</script>
+
+<div> geolocation been commented</div>
+</body>
+</html>
