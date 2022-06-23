@@ -1,0 +1,32 @@
+:root {
+ --base-color1: 0;
+ --clr1-very-light: hsl(var(--base-color1), 100%, 90%);
+ /*  */
+ --clr1-more-light: hsl(var(--base-color1), 100%, 80%);
+ --clr1-light: hsl(var(--base-color1), 60%, 60%);
+ /*  */
+ --clr1-normal: hsl(var(--base-color1), 50%, 50%);
+ --clr1-dark: hsl(var(--base-color1), 55%, 35%);
+
+ --base-color2: 120;
+ /* very light is good */
+ --clr2-very-light: hsl(var(--base-color2), 100%, 90%);
+ /*  */
+ --clr2-more-light: hsl(var(--base-color2), 100%, 80%);
+ --clr2-light: hsl(var(--base-color2), 60%, 60%);
+ /* base normal is good */
+ --clr2-normal: hsl(var(--base-color2), 50%, 50%);
+ /* base dark is good */
+ --clr2-dark: hsl(var(--base-color2), 55%, 35%);
+}
+
+/* using this for css module */
+.box {
+ height: 100px;
+ width: 100px;
+ border: 1px solid blue;
+}
+/* using this for css module */
+.box0 {
+ background-color: yellow;
+}
