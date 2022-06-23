@@ -1,0 +1,66 @@
+.MainNav {
+  border: 5px solid green;
+  display: flex;
+  justify-content: center;
+}
+
+.MainNavWrap {
+  border: 1px solid red;
+  padding: 0.1rem;
+  display: flex;
+  justify-content: center;
+  min-height: 10vh;
+  /* margin: auto; */
+  align-items: center;
+  min-width: 80%;
+}
+
+.mainNavUl {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex: 1;
+  border: 3px solid #c3c3c3;
+  background: rgb(214, 214, 214, 0.2);
+  padding: 5px 3rem 5px 3rem;
+  border-radius: 40px;
+  
+  
+}
+
+.mainNavUl > li {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0rem;
+  list-style: none;
+  /* position: relative; */
+}
+
+.mainNavUl > li > p > a {
+  text-decoration: none;
+  border: 1px solid green;
+  padding: 0rem 0px 0px 0px;
+  font-weight: bold;
+}
+.mainNavUl > li > img {
+  width: 100px;
+  height: 35px;
+  /* width:50%;
+  height:  75%; */
+}
+
+.mainNavUl li p {
+  text-align: center;
+  /* position: absolute;
+  top: 70%; */
+}
+
+/* tablet */
+
+@media and screen (max-width: 1200px) {
+}
+
+/* mobile */
+
+@media and screen (max-width: 768px) {
+}
