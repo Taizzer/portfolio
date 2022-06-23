@@ -1,0 +1,446 @@
+:root {
+  --glass: rgba(255, 255, 255, 0.53);
+
+  --base-color0: 0;
+
+  --color0-white: hsl(var(--base-color0), 0%, 100%);
+  --color0-more-light: hsl(var(--base-color0), 0%, 90%);
+  --color0-light: hsl(var(--base-color0), 0%, 80%);
+  /* Normal gray */
+  --color0-normal: hsl(var(--base-color0), 0%, 60%);
+  --color0-dark: hsl(var(--base-color0), 0%, 35%);
+  --color0-verydark: hsl(var(--base-color0), 0%, 15%);
+  --color0-black: hsl(var(--base-color0), 0%, 0%);
+  /* ========= */
+
+  --base-color1: 1;
+  --color1-very-light: hsl(var(--base-color1), 100%, 80%);
+
+  /* light */
+  --color1-more-light: hsl(var(--base-color1), 70%, 60%);
+
+  /* normal */
+  --color1-light: hsl(var(--base-color1), 100%, 60%);
+  /*dark  */
+  --color1-normal: hsl(var(--base-color1), 80%, 50%);
+
+  /* very dark */
+  --color1-dark: hsl(var(--base-color1), 90%, 35%);
+
+  /* ========= */
+
+  --base-color15: 15;
+  /* very light is good */
+  --color15-very-light: hsl(var(--base-color15), 100%, 80%);
+  /*  */
+  --color15-more-light: hsl(var(--base-color15), 70%, 60%);
+  --color15-light: hsl(var(--base-color15), 100%, 60%);
+  /* base normal is good */
+  --color15-normal: hsl(var(--base-color15), 80%, 50%);
+  /* base dark is good */
+  --color15-dark: hsl(var(--base-color15), 90%, 35%);
+
+  /* ========= */
+
+  --base-color30: 30;
+  /* very light is good */
+  --color30-very-light: hsl(var(--base-color30), 100%, 80%);
+  /*  */
+  --color30-more-light: hsl(var(--base-color30), 70%, 60%);
+  --color30-light: hsl(var(--base-color30), 100%, 60%);
+  /* base normal is good */
+  --color30-normal: hsl(var(--base-color30), 80%, 50%);
+  /* base dark is good */
+  --color30-dark: hsl(var(--base-color30), 90%, 35%);
+
+  /* ========= */
+
+  --base-color45: 45;
+  /* very light is good */
+  --color45-very-light: hsl(var(--base-color45), 100%, 80%);
+  /*  */
+  --color45-more-light: hsl(var(--base-color45), 70%, 60%);
+  --color45-light: hsl(var(--base-color45), 100%, 60%);
+  /* base normal is good */
+  --color45-normal: hsl(var(--base-color45), 80%, 50%);
+  /* base dark is good */
+  --color45-dark: hsl(var(--base-color45), 90%, 35%);
+
+  /* ========= */
+
+  --base-color60: 60;
+  /* very light is good */
+  --color60-very-light: hsl(var(--base-color60), 100%, 80%);
+  /*  */
+  --color60-more-light: hsl(var(--base-color60), 70%, 60%);
+  --color60-light: hsl(var(--base-color60), 100%, 60%);
+  /* base normal is good */
+  --color60-normal: hsl(var(--base-color60), 80%, 50%);
+  /* base dark is good */
+  --color60-dark: hsl(var(--base-color60), 90%, 35%);
+
+  /* ========= */
+
+  --base-color75: 75;
+  /* very light is good */
+  --color75-very-light: hsl(var(--base-color75), 100%, 80%);
+  /*  */
+  --color75-more-light: hsl(var(--base-color75), 70%, 60%);
+  --color75-light: hsl(var(--base-color75), 100%, 60%);
+  /* base normal is good */
+  --color75-normal: hsl(var(--base-color75), 80%, 50%);
+  /* base dark is good */
+  --color75-dark: hsl(var(--base-color75), 90%, 35%);
+
+  /* ========= */
+
+  --base-color90: 90;
+  /* very light is good */
+  --color90-very-light: hsl(var(--base-color90), 100%, 80%);
+  /*  */
+  --color90-more-light: hsl(var(--base-color90), 70%, 60%);
+  --color90-light: hsl(var(--base-color90), 100%, 60%);
+  /* base normal is good */
+  --color90-normal: hsl(var(--base-color90), 80%, 50%);
+  /* base dark is good */
+  --color90-dark: hsl(var(--base-color90), 90%, 35%);
+
+  /* ========= */
+
+  --base-color105: 105;
+  /* very light is good */
+  --color105-very-light: hsl(var(--base-color105), 100%, 80%);
+  /*  */
+  --color105-more-light: hsl(var(--base-color105), 70%, 60%);
+  --color105-light: hsl(var(--base-color105), 100%, 60%);
+  /* base normal is good */
+  --color105-normal: hsl(var(--base-color105), 80%, 50%);
+  /* base dark is good */
+  --color105-dark: hsl(var(--base-color105), 90%, 35%);
+
+  /* ========= */
+
+  --base-color120: 120;
+  /* very light is good */
+  --color120-very-light: hsl(var(--base-color120), 100%, 80%);
+  /*  */
+  --color120-more-light: hsl(var(--base-color120), 70%, 60%);
+  --color120-light: hsl(var(--base-color120), 100%, 60%);
+  /* base normal is good */
+  --color120-normal: hsl(var(--base-color120), 80%, 50%);
+  /* base dark is good */
+  --color120-dark: hsl(var(--base-color120), 90%, 35%);
+
+  /* ========= */
+
+  --base-color135: 135;
+  /* very light is good */
+  --color135-very-light: hsl(var(--base-color135), 100%, 80%);
+  /*  */
+  --color135-more-light: hsl(var(--base-color135), 70%, 60%);
+  --color135-light: hsl(var(--base-color135), 100%, 60%);
+  /* base normal is good */
+  --color135-normal: hsl(var(--base-color135), 80%, 50%);
+  /* base dark is good */
+  --color135-dark: hsl(var(--base-color135), 90%, 35%);
+
+  /* ========= */
+
+  --base-color150: 150;
+  /* very light is good */
+  --color150-very-light: hsl(var(--base-color150), 100%, 80%);
+  /*  */
+  --color150-more-light: hsl(var(--base-color150), 70%, 60%);
+  --color150-light: hsl(var(--base-color150), 100%, 60%);
+  /* base normal is good */
+  --color150-normal: hsl(var(--base-color150), 80%, 50%);
+  /* base dark is good */
+  --color150-dark: hsl(var(--base-color150), 90%, 35%);
+
+  /* ========= */
+
+  --base-color165: 165;
+  /* very light is good */
+  --color165-very-light: hsl(var(--base-color165), 100%, 80%);
+  /*  */
+  --color165-more-light: hsl(var(--base-color165), 70%, 60%);
+  --color165-light: hsl(var(--base-color165), 100%, 60%);
+  /* base normal is good */
+  --color165-normal: hsl(var(--base-color165), 80%, 50%);
+  /* base dark is good */
+  --color165-dark: hsl(var(--base-color165), 90%, 35%);
+
+  /* ========= */
+
+  --base-color180: 180;
+  /* very light is good */
+  --color180-very-light: hsl(var(--base-color180), 100%, 80%);
+  /*  */
+  --color180-more-light: hsl(var(--base-color180), 70%, 60%);
+  --color180-light: hsl(var(--base-color180), 100%, 60%);
+  /* base normal is good */
+  --color180-normal: hsl(var(--base-color180), 80%, 50%);
+  /* base dark is good */
+  --color180-dark: hsl(var(--base-color180), 90%, 35%);
+
+  /* ========= */
+
+  --base-color195: 195;
+  /* very light is good */
+  --color195-very-light: hsl(var(--base-color195), 100%, 80%);
+  /*  */
+  --color195-more-light: hsl(var(--base-color195), 70%, 60%);
+  --color195-light: hsl(var(--base-color195), 100%, 60%);
+  /* base normal is good */
+  --color195-normal: hsl(var(--base-color195), 80%, 50%);
+  /* base dark is good */
+  --color195-dark: hsl(var(--base-color195), 90%, 35%);
+  /* ========= */
+
+  --base-color210: 210;
+  /* very light is good */
+  --color210-very-light: hsl(var(--base-color210), 100%, 80%);
+  /*  */
+  --color210-more-light: hsl(var(--base-color210), 70%, 60%);
+  --color210-light: hsl(var(--base-color210), 100%, 60%);
+  /* base normal is good */
+  --color210-normal: hsl(var(--base-color210), 80%, 50%);
+  /* base dark is good */
+  --color210-dark: hsl(var(--base-color210), 90%, 35%);
+
+  /* ========= */
+
+  --base-color225: 225;
+  /* very light is good */
+  --color225-very-light: hsl(var(--base-color225), 100%, 80%);
+  /*  */
+  --color225-more-light: hsl(var(--base-color225), 70%, 60%);
+  --color225-light: hsl(var(--base-color225), 100%, 60%);
+  /* base normal is good */
+  --color225-normal: hsl(var(--base-color225), 80%, 50%);
+  /* base dark is good */
+  --color225-dark: hsl(var(--base-color225), 90%, 35%);
+
+  /* ========= */
+
+  --base-color240: 240;
+  /* very light is good */
+  --color240-very-light: hsl(var(--base-color240), 100%, 80%);
+  /*  */
+  --color240-more-light: hsl(var(--base-color240), 70%, 60%);
+  --color240-light: hsl(var(--base-color240), 100%, 60%);
+  /* base normal is good */
+  --color240-normal: hsl(var(--base-color240), 80%, 50%);
+  /* base dark is good */
+  --color240-dark: hsl(var(--base-color240), 90%, 35%);
+  /* ========= */
+
+  --base-color255: 255;
+  /* very light is good */
+  --color255-very-light: hsl(var(--base-color255), 100%, 80%);
+  /*  */
+  --color255-more-light: hsl(var(--base-color255), 70%, 60%);
+  --color255-light: hsl(var(--base-color255), 100%, 60%);
+  /* base normal is good */
+  --color255-normal: hsl(var(--base-color255), 80%, 50%);
+  /* base dark is good */
+  --color255-dark: hsl(var(--base-color255), 90%, 35%);
+
+  /* ========= */
+
+  --base-color270: 270;
+  /* very light is good */
+  --color270-very-light: hsl(var(--base-color270), 100%, 80%);
+  /*  */
+  --color270-more-light: hsl(var(--base-color270), 70%, 60%);
+  --color270-light: hsl(var(--base-color270), 100%, 60%);
+  /* base normal is good */
+  --color270-normal: hsl(var(--base-color270), 80%, 50%);
+  /* base dark is good */
+  --color270-dark: hsl(var(--base-color270), 90%, 35%);
+
+  /* ========= */
+
+  --base-color285: 285;
+  /* very light is good */
+  --color285-very-light: hsl(var(--base-color285), 100%, 80%);
+  /*  */
+  --color285-more-light: hsl(var(--base-color285), 70%, 60%);
+  --color285-light: hsl(var(--base-color285), 100%, 60%);
+  /* base normal is good */
+  --color285-normal: hsl(var(--base-color285), 80%, 50%);
+  /* base dark is good */
+  --color285-dark: hsl(var(--base-color285), 90%, 35%);
+
+  /* ========= */
+
+  --base-color300: 300;
+  /* very light is good */
+  --color300-very-light: hsl(var(--base-color300), 100%, 80%);
+  /*  */
+  --color300-more-light: hsl(var(--base-color300), 70%, 60%);
+  --color300-light: hsl(var(--base-color300), 100%, 60%);
+  /* base normal is good */
+  --color300-normal: hsl(var(--base-color300), 80%, 50%);
+  /* base dark is good */
+  --color300-dark: hsl(var(--base-color300), 90%, 35%);
+
+  /* ========= */
+
+  --base-color315: 315;
+  /* very light is good */
+  --color315-very-light: hsl(var(--base-color315), 100%, 80%);
+  /*  */
+  --color315-more-light: hsl(var(--base-color315), 70%, 60%);
+  --color315-light: hsl(var(--base-color315), 100%, 60%);
+  /* base normal is good */
+  --color315-normal: hsl(var(--base-color315), 80%, 50%);
+  /* base dark is good */
+  --color315-dark: hsl(var(--base-color315), 90%, 35%);
+
+  /* ========= */
+
+  --base-color330: 330;
+  /* very light is good */
+  --color330-very-light: hsl(var(--base-color330), 100%, 80%);
+  /*  */
+  --color330-more-light: hsl(var(--base-color330), 70%, 60%);
+  --color330-light: hsl(var(--base-color330), 100%, 60%);
+  /* base normal is good */
+  --color330-normal: hsl(var(--base-color330), 80%, 50%);
+  /* base dark is good */
+  --color330-dark: hsl(var(--base-color330), 90%, 35%);
+
+  /* ========= */
+
+  --base-color350: 350;
+  /* very light is good */
+  --color350-very-light: hsl(var(--base-color350), 100%, 80%);
+  /*  */
+  --color350-more-light: hsl(var(--base-color350), 70%, 60%);
+  --color350-light: hsl(var(--base-color350), 100%, 60%);
+  /* base normal is good */
+  --color350-normal: hsl(var(--base-color350), 80%, 50%);
+  /* base dark is good */
+  --color350-dark: hsl(var(--base-color350), 90%, 35%);
+
+  /* Font size DeskTop */
+  --fs-64: 4rem;
+  /****************************/
+  --fs-57: 3.5rem;
+  /****************************/
+  --fs-45: 2.8125rem;
+  /****************************/
+
+  /***********for tablet 32 and 36 *****************/
+  --fs-36: 1.5rem;
+  /***********for tablet*****************/
+  --fs-32: 1.5rem;
+
+  /****************************/
+  --fs-24: 1.5rem;
+  /****************************/
+  --fs-16: 1rem;
+  /****************************/
+  --fs-14: 0.875rem;
+  /****************************/
+  --fs-12: 0.75rem;
+  /****************************/
+
+  /*  DeskTop
+roboto 
+font-size:64px; "DK Display Small" line-height :44; letter-spacing:0;*/
+  /* "DK Heading Large"  f-s:57px; li-h :40; le-s:0; */
+  /*"DK Heading Medium"  f-s:45px; li-h :36; le-s:0;*/
+  /*"DK Heading Small"  f-s:24px; li-h :32; le-s:0;*/
+  /*DK Body Large  f-s:16px; li-h :24; le-s:0.15%;*/
+  /* DK Body Medium  f-s:14px; li-h :20; le-s:0.25%;*/
+  /*DK Body Small f-s:12px; li-h :16; le-s:0.40%; 
+*/
+
+  /*  Tablet
+roboto 
+font-size:64px; "DK Display Small" line-height :44; letter-spacing:0;*/
+  /* "DK Heading Large"  f-s:57px; li-h :40; le-s:0; */
+  /*"DK Heading Medium"  f-s:45px; li-h :36; le-s:0;*/
+  /*"DK Heading Small"  f-s:24px; li-h :32; le-s:0;*/
+  /*DK Body Large  f-s:16px; li-h :24; le-s:0.15%;*/
+  /* DK Body Medium  f-s:14px; li-h :20; le-s:0.25%;*/
+  /*DK Body Small f-s:12px; li-h :16; le-s:0.40%; 
+*/
+}
+
+/* 
+35rem  tablet size 560px
+45rem   720 px
+
+safari treat 3em diffrently so use em for media queries for safari zoom
+
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h6 {
+  --base-color1: 50;
+  color: var(--color-med-dark);
+  background-color: hsl(var(--color-dark / 0.5));
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+}
+.box-2 {
+  display: inline-block;
+  bborder: 1px solid green;
+}
+.box0 {
+  background-color: var(--color1-very-light);
+}
+.box1 {
+  background-color: var(--color1-more-light);
+}
+.box1- {
+  background-color: var(--color1-light);
+}
+.box2 {
+  background-color: var(--color1-normal);
+}
+.box3 {
+  background-color: var(--color1-dark);
+}
+.box4 {
+  background-color: var(--color15-very-light);
+}
+.box5 {
+  background-color: var(--color15-light);
+}
+.box5- {
+  background-color: var(--color15-more-light);
+}
+.box6 {
+  background-color: var(--color15-normal);
+}
+.box7 {
+  background-color: var(--color15-dark);
+}
+
+.addform-container {
+  color: var(--color1-normal);
+}
