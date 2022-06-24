@@ -1,0 +1,41 @@
+.updates {
+  width: 85%;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  margin-top: 1rem;
+  border: 1px solid #c3c3c3;
+}
+
+.update {
+  display: flex;
+  gap: 0.5rem;
+  /* border: 1px solid #c3c3c3;
+  border-radius: 7px;
+  padding:0.5rem; */
+  border-bottom: 2px solid #c3c3c3;
+  padding-bottom: 0.5rem;
+}
+
+.update:last-child {
+  border-bottom: none;
+}
+
+.update > img {
+  border-radius: 10%;
+  height: 70px;
+}
+.updateDetail {
+}
+
+.namenote {
+  margin-bottom: 1rem;
+}
+
+.note > div > span:nth-of-type(1) {
+  font-weight: bold;
+}
