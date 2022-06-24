@@ -1,0 +1,50 @@
+/* Tets */
+/* .MuiTableRow-root > * {
+  border: 2px solid red;
+} */
+
+.MuiTable-root > * {
+  /* border: 2px solid #c3c3c3; */
+}
+
+.MuiTable-root.MuiTableHead-root {
+  font-weight: bold;
+}
+
+.MuiTableRow-head > * {
+  font-weight: bold !important;
+}
+.Table td,
+th {
+  border: none;
+}
+
+/* maynot be working the radius */
+.Table:first-child {
+  /* border: 1px solid red !important; */
+  border-radius: 1rem;
+}
+
+.Table {
+  width: 98%;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1200px) {
+  .Table {
+    width: 164%;
+  }
+}
+
+/* tablee style in mobie resposive bug */
+@media screen and (max-width: 768) {
+  .Table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    overflow-y: scroll;
+  }
+}
