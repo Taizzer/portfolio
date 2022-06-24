@@ -1,0 +1,22 @@
+.MainCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* Media queries */
+@media screen and (max-width: 1200px) {
+  .MainCenter {
+    justify-content: start;
+    margin-top: 1rem;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .MainCenter {
+    align-items: center;
+    /* border: 1px solid green; */
+    width: 70%;
+  }
+}
