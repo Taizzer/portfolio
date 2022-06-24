@@ -1,0 +1,33 @@
+.Cards {
+  display: flex;
+  gap: 10px;
+}
+.parentContainer {
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+  .Cards {
+    gap: 1px;
+    flex-direction: column;
+  }
+  .parentContainer {
+    height: 8rem;
+  }
+}
+
+/* mobile */
+
+@media screen and (max-width: 768px) {
+  .Cards {
+    /* border: 1px solid red; */
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+  .parentContainer {
+    /* border: 1px solid blue; */
+  }
+}
