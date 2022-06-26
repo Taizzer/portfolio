@@ -18,11 +18,11 @@ const App = () => {
       <div className="App-Container">
         <MainNav />
         <Switch>
-        {/* <Add /> */}
-        <Route path="/shopapp">
-        <TrackShopApp />
-        </Route>
-        
+          {/* <Add /> */}
+          <Route path="/shopapp">
+            <TrackShopApp />
+          </Route>
+
           {/* TEST */}
           <Route path="/del">
             <TestAppDel />
