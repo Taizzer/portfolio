@@ -14,22 +14,25 @@ and no need for them here */
 .TrackShopApp {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  background-color: hsl(0, 0%, 90%);
   /* background-color: hsl(103, 69%, 75%); */
   /* background-color: rgba(219, 206, 23, 0.5); */
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* I toggle center off so it can fit to top header */
+  /* align-items: center; */
+  /* border: 1px solid red; */
 }
 .Track-Container {
-  border: 1px solid #c3c3c3;
+  /* border: 1px solid #c3c3c3; */
   display: grid;
   position: absolute;
 
   background-color: var(--glass);
   height: 97%;
   width: 97%;
-  border-radius: 2rem;
+  border-radius: 1rem;
   /* border: 1px solid green; */
   overflow: hidden;
   grid-template-columns: 11rem auto 20rem;
