@@ -1,7 +1,11 @@
 .MainCenter {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* keep it center so the table have full view */
+  /* justify-content: space-evenly; */
+  justify-content: center;
+  /* border: 1px solid red; */
+  gap: 10px;
 }
 
 /* Media queries */
