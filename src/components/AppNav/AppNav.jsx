@@ -33,7 +33,7 @@ const MainNav = () => {
             <img src={Inav1} alt="" />
             {/* <span>image4</span> */}
             <p>
-              <Link to="">4</Link>
+              <Link to="test">4</Link>
             </p>
           </li>
         </ul>
