@@ -1,0 +1,131 @@
+:root {
+  --gradient1: linear-gradient(to bottom, #ff9ca0, #ffcfef);
+  --gradient2: linear-gradient(to bottom, #a38ed2, #f9c1eb);
+
+  --gradient3: linear-gradient(to top, #ffecd2, #fdb8a1);
+
+  --gradient4: linear-gradient(to bottom, #a2c5fe, #fdb8a1);
+
+  /* gr5 nice transition */
+  --gradient5: linear-gradient(to bottom, #a2c5fe, #c2e9fc);
+
+  --gradient6: linear-gradient(to bottom, #d0dae0, #e2ebf0);
+
+  --gradient7: linear-gradient(to bottom, #ef9da8, #ffdce0);
+}
+
+.forecastContainer {
+  /* border: 1px dotted green; */
+  /* max-width: 60rem; */
+
+  /* font-family: "Courier New", Courier, monospace; */
+  /* font-family: inter; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  padding: 0.9rem;
+  display: flex;
+  /* background: var(--gradient7); */
+}
+
+.weatherWrap {
+  /* background: rgb(234, 234, 234); */
+  border-radius: 12px;
+  padding: 1.5rem 1.5rem;
+
+  /* box-shadow: 2px 5px 8px rgb(129, 129, 129); */
+  box-shadow: 1px 5px 4px rgb(129, 129, 129, 0.6);
+
+  background-color: rgba(255, 255, 255);
+  background: var(--gradient5);
+
+  /* backdrop-filter: blur(5px); */
+}
+
+.weatherWrap > * {
+  /* border: 1px solid red; */
+}
+/* .weatherWrap > div > * {
+  border: 1px solid red;
+} */
+
+.weatherWrapInside {
+  display: ;
+}
+
+.gr1 {
+  background: var(--gradient1);
+}
+/* 2 sides gradient border */
+.gr2 {
+  border-width: 3px;
+  border-style: solid;
+  border-image: var(--gradient2) 1 100%;
+}
+
+/* border gradient but radius does not work */
+.border-gradient-1 {
+  border: 10px solid;
+  border-image-slice: 1;
+  /* change border-width to 50px looks cools */
+  border-width: 5px;
+  border-image-source: var(--gradient8);
+  outline: 4px solid rgb(233, 233, 233);
+}
+
+.headLocation-div {
+  /* background: rgb(31, 67, 116); */
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 3px solid hsl(217, 61%, 37%);
+  background: hsl(217, 70%, 20%);
+}
+.headLocation {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+.headLocation-clr-blue {
+}
+.details12 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0.2rem;
+  color: #5a5a5a;
+  border-bottom: 1px solid rgb(171, 170, 1700.7);
+}
+.details12:last-child {
+  border: none;
+}
+
+.humidity-temp {
+  font-weight: 800;
+  color: #464646;
+}
+
+.div-temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255, 0.3);
+  border-radius: 12px;
+  margin: 0.5rem;
+}
+
+.temp-span {
+  font-size: 57px;
+  font-weight: 100;
+}
+
+.ForecastApp {
+  padding-top: 1rem;
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-city {
+  font-weight: 500;
+}
