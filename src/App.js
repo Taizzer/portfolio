@@ -11,14 +11,21 @@ import TrackShopApp from "./TrackShopApp/TrackShopApp";
 import MainNav from "./components/AppNav/AppNav";
 import TestAppDel from "./TestAppDel";
 import TestAppDelHome from "./TestAppDelHome";
-
+import ForecastApp from "./ForecastApp/ForecastApp";
+//
 const App = () => {
   return (
     <div className="App">
       <div className="App-Container">
         <MainNav />
+
         <Switch>
           {/* <Add /> */}
+
+          <Route path="/" exact>
+            <ForecastApp />
+          </Route>
+
           <Route path="/shopapp">
             <TrackShopApp />
           </Route>
@@ -30,7 +37,7 @@ const App = () => {
           {/* TEST */}
 
           {/* TEST */}
-          <Route path="/" exact>
+          <Route path="/test">
             <TestAppDelHome />
           </Route>
         </Switch>

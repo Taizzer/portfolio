@@ -10,6 +10,7 @@
     "@iconscout/react-unicons": "1.1.6",
     "@mui/material": "5.8.3",
     "apexcharts": "3.35.3",
+    "axios": "^0.27.2",
     "framer-motion": "4.1.17",
     "react": "18.0.0",
     "react-apexcharts": "1.4.0",
