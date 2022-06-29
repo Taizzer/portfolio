@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../ForecastApp.css";
 import axios from "axios";
 
-//const api = http://api.weatherapi.com/v1/current.json?key=cf686a274556414c876174526222606&q=London&aqi=no
+
 
 //http://api.weatherapi.com/v1/forecast.json?key=cf686a274556414c876174526222606&q=London&days=2&aqi=no&alerts=no
 const WeatherLondon = ({ propquery }) => {
