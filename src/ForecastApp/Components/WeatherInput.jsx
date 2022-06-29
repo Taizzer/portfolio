@@ -1,35 +1,67 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../ForecastApp.css";
 import axios from "axios";
 
-//const api = http://api.weatherapi.com/v1/current.json?key=cf686a274556414c876174526222606&q=London&aqi=no
-
-//http://api.weatherapi.com/v1/forecast.json?key=cf686a274556414c876174526222606&q=London&days=2&aqi=no&alerts=no
 const WeatherInput = () => {
+  // auto select weather input when render
+  const refFocusInput = useRef(null);
   // null = false, keep the state false untill data fetched first
   //if null removed yes still works good,but dont remove null.
   const [weather2, setWeather2] = useState(null);
-  const query2 = "texas";
-  console.log("we input");
-  console.log(weather2);
+  const [weatherInput, setWeatherInput] = useState("");
+  //const [weatherClick, setWeatherClick] = useState("finland");
+  //const query2 = "texas";
+  // console.log("we input");
+  // console.log(weather2);
+  // load default data
   useEffect(() => {
     axios
       .get(
-        `http://api.weatherapi.com/v1/current.json?key=cf686a274556414c876174526222606&q=${query2}&days=2&aqi=no`
+        `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=finland&days=2&aqi=no`
       )
       .then((data) => {
         setWeather2(data.data);
       })
       .catch((err) => console.log(err));
+    refFocusInput.current.focus();
   }, []);
+
+  const weatherQuery = (e) => {
+    setWeatherInput(e.target.value);
+    // console.log(e.target.value);
+  };
+
+  const weatherSub = () => {
+    axios
+      .get(
+        `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=${weatherInput}&days=2&aqi=no`
+      )
+      .then((data) => {
+        setWeather2(data.data);
+      })
+      .catch((err) => console.log(err));
+    setWeatherInput("");
+  };
   return (
     <div className="ForecastApp3">
       <div className="forecastContainer">
         {/* <p>forecastapp</p> */}
         {/* weather is true then && render the 2nd  {true && render this} */}
-        <div className="weatherWrap   ">
+        <div className="weatherWrap input-weatherWrap-modify  ">
+          <div className="weather-input">
+            <input
+              placeholder="finland"
+              onChange={weatherQuery}
+              value={weatherInput}
+              ref={refFocusInput}
+              type="text"
+            />
+            <button onClick={weatherSub}>search</button>
+          </div>
+
           {weather2 && (
             <div className="weatherWrapInside  ">
+              {/* <input type="text" /> */}
               <div className="headLocation-div">
                 <span className="headLocation">
                   {weather2.location.country},{" "}

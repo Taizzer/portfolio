@@ -10,13 +10,16 @@ const WeatherLondon = ({ propquery }) => {
   //if null removed yes still works good,but dont remove null.
   const [weather, setWeather] = useState(null);
   //const query = "london";
+
   useEffect(() => {
     axios
       .get(
-        `http://api.weatherapi.com/v1/current.json?key=cf686a274556414c876174526222606&q=${propquery}&days=2&aqi=no`
+        `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=${propquery}&days=2&aqi=no`
       )
       .then((data) => {
         setWeather(data.data);
+        // console.log("data", data);
+        // console.log("data2", data.data);
       })
       .catch((err) => console.log(err));
   }, []);
