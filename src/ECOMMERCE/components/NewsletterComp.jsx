@@ -13,6 +13,9 @@ const Container = styled.div`
 const Title = styled.h1`
   font-size: 64px;
   margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 18px;
 `;
 
 const Descri = styled.div``;
