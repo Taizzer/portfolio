@@ -12,9 +12,19 @@ const WrapperNavbar = styled.div`
   justify-content: space-between;
 `;
 //as creating 3 divs to split nav into 3 section
-const Left = styled.div``;
-const Center = styled.div``;
-const Right = styled.div``;
+const Left = styled.div`
+  //width: 33.33%;
+  //expand as you want flex 1 added nav responsive
+  flex: 1;
+`;
+const Center = styled.div`
+  //width: 33.33%;
+  flex: 1;
+`;
+const Right = styled.div`
+  //width: 33.33%;
+  flex: 1;
+`;
 const NavbarComp = () => {
   return (
     <ContainerStyle>
@@ -22,8 +32,14 @@ const NavbarComp = () => {
         {/* <h2 style={{ color: "white", border: "1px solid yellow" }}>
           NavbarComp
         </h2> */}
-        <Left>Left</Left>
-        <Center>Cetner</Center>
+        <Left>
+          Left Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aspernatur, inventore.
+        </Left>
+        <Center>
+          Cetner Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Accusantium, facilis.
+        </Center>
         <Right>right</Right>
       </WrapperNavbar>
     </ContainerStyle>
