@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
-
+import { sliderItems } from "../data";
 const Container = styled.div`
   /* border: 1px solid red; */
   display: flex;
@@ -136,39 +136,19 @@ const SliderComp = () => {
         </Arrow>
 
         <Wrap>
-          <Slide bg="ffd3d3">
-            <ImgContainer>
-              <Image src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/woman_dress/73244/19FW_wed9_col5.png" />
-            </ImgContainer>
+          {sliderItems.map((item) => {
+            <Slide bg="ffd3d3">
+              <ImgContainer>
+                <Image src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/woman_dress/73244/19FW_wed9_col5.png" />
+              </ImgContainer>
 
-            <InfoContainer>
-              <Title> Womens Spring Summer Mini Dress</Title>
-              <Desc>95% Polyester, 5% Elastane</Desc>
-              <Button>Shop</Button>
-            </InfoContainer>
-          </Slide>
-          <Slide bg="d3fffd">
-            <ImgContainer>
-              <Image src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/woman_dress/73244/19FW_wed9_col5.png" />
-            </ImgContainer>
-
-            <InfoContainer>
-              <Title> Popular </Title>
-              <Desc>95% Polyester, 5% Elastane</Desc>
-              <Button>Shop</Button>
-            </InfoContainer>
-          </Slide>
-          <Slide bg="ffa3a3">
-            <ImgContainer>
-              <Image src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/woman_dress/73244/19FW_wed9_col5.png" />
-            </ImgContainer>
-
-            <InfoContainer>
-              <Title> for Winte </Title>
-              <Desc>95% Polyester, 5% Elastane</Desc>
-              <Button>Shop</Button>
-            </InfoContainer>
-          </Slide>
+              <InfoContainer>
+                <Title> Womens Spring Summer Mini Dress</Title>
+                <Desc>95% Polyester, 5% Elastane</Desc>
+                <Button>Shop</Button>
+              </InfoContainer>
+            </Slide>;
+          })}
         </Wrap>
       </ContainerWrap>
     </Container>
