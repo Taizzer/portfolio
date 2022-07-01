@@ -1,9 +1,11 @@
 import React from "react";
-
+import AnnouncementComp from "../components/AnnouncementComp";
+import NavbarComp from "../components/NavbarComp";
 const HomePage = () => {
   return (
     <div>
-      <h2>home</h2>
+      <AnnouncementComp />
+      <NavbarComp />
     </div>
   );
 };
