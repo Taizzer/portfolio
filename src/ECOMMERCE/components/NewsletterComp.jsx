@@ -34,11 +34,16 @@ const InputWrap = styled.div`
 
 const Input = styled.input`
   border: none;
-  flex: 2;
+  flex: 6;
   padding-left: 18px;
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  flex: 1;
+  border: none;
+  background-color: #3b5b85;
+  color: white;
+`;
 
 const NewsletterComp = () => {
   return (
@@ -46,7 +51,7 @@ const NewsletterComp = () => {
       <Title>Newsletter</Title>
       <Descri>Get updates...</Descri>
       <InputWrap>
-        <Input placeholder="Your email" />
+        <Input placeholder="email@email.com" />
         <Button>
           <SendOutlinedIcon />
         </Button>
