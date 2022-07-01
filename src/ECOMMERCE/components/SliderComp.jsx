@@ -3,17 +3,28 @@ import styled from "styled-components";
 import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 
+const Container = styled.div`
+  border: 1px solid red;
+`;
+const ContainerWrap = styled.div`
+  border: 1px solid blue;
+  width: 50%;
+  height: 40vh;
+  margin: auto;
+`;
+const Arrow = styled.div``;
 const SliderComp = () => {
   return (
     <Container>
-      <Arrow direction="left">
-        <ArrowLeftOutlinedIcon />
-      </Arrow>
-      <Arrow direction="right">
-        <ArrowRightOutlinedIcon />
-      </Arrow>
+      <ContainerWrap>
+        <Arrow direction="left">
+          <ArrowLeftOutlinedIcon />
+        </Arrow>
+        <Arrow direction="right">
+          <ArrowRightOutlinedIcon />
+        </Arrow>
 
-      <Wrap>
+        {/* <Wrap>
         <Slide>
           <ImgContainer>
             <Image src="" />
@@ -21,7 +32,8 @@ const SliderComp = () => {
 
           <InfoContainer></InfoContainer>
         </Slide>
-      </Wrap>
+      </Wrap> */}
+      </ContainerWrap>
     </Container>
   );
 };
