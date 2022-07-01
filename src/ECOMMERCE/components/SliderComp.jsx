@@ -6,13 +6,14 @@ import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 const Container = styled.div`
   border: 1px solid red;
   display: flex;
-  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  background: white;
+  /* background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%); */
 `;
 
 const ContainerWrap = styled.div`
   border: 1px solid blue;
-  width: 50%;
-  height: 40vh;
+  width: 100%;
+  height: 70vh;
   /* center */
   margin: auto;
   display: flex;
@@ -27,7 +28,9 @@ const Arrow = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-color: white;
+  background-color: #323131;
+  color: white;
+  font-size: 2rem;
   border-radius: 50%;
   display: flex;
   position: absolute;
@@ -41,6 +44,7 @@ const Arrow = styled.div`
   left: ${(props) => props.direction === "left" && "10px"};
   cursor: pointer;
   opacity: 0.6;
+  border: 1px solid black;
 `;
 
 const Wrap = styled.div`
@@ -50,15 +54,28 @@ const Wrap = styled.div`
   width: 100%;
 `;
 const Slide = styled.div`
+  border: 2px solid yellow;
+  /* width:100% */
   height: 100%;
+  display: flex;
+  align-items: center;
 `;
 const ImgContainer = styled.div`
   height: 100%;
+  /* auto shrink  */
+  flex: 1;
+
+  border: 1px solid red;
 `;
 const Image = styled.img`
   height: 100%;
+  flex: 1;
+  border: 1px solid red;
+  margin-left: 50%;
 `;
-const InfoContainer = styled.div``;
+const InfoContainer = styled.div`
+  flex: 1;
+`;
 
 const SliderComp = () => {
   return (
@@ -78,7 +95,7 @@ const SliderComp = () => {
               <Image src="https://m.media-amazon.com/images/I/713NOdX971L._AC_UY550_.jpg" />
             </ImgContainer>
 
-            <InfoContainer></InfoContainer>
+            <InfoContainer>info1</InfoContainer>
           </Slide>
         </Wrap>
       </ContainerWrap>
