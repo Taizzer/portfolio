@@ -12,23 +12,24 @@ import MainNav from "./components/AppNav/AppNav";
 import TestAppDel from "./TestAppDel";
 import TestAppDelHome from "./TestAppDelHome";
 import ForecastApp from "./ForecastApp/ForecastApp";
+import FoodApp from "./FoodApp/FoodApp";
+import ECOMMERCEAPP from "./ECOMMERCE/ECOMMERCEAPP";
 //
 const App = () => {
   return (
     <div className="App">
       <div className="App-Container">
         <MainNav />
-
+        <ECOMMERCEAPP />
+        {/* <FoodApp /> */}
         <Switch>
           {/* <Add /> */}
 
           <Route path="/" exact>
-            <ForecastApp />
+            {/* <ForecastApp /> */}
           </Route>
 
-          <Route path="/shopapp">
-            <TrackShopApp />
-          </Route>
+          <Route path="/shopapp">{/* <TrackShopApp /> */}</Route>
 
           {/* TEST */}
           <Route path="/del">
