@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+// import material ui icons
+import SearchIcon from "@mui/icons-material/Search";
 
 //making styled components for NavbarComp. Capital
 const ContainerStyle = styled.div`
@@ -16,6 +18,19 @@ const Left = styled.div`
   //width: 33.33%;
   //expand as you want flex 1 added nav responsive
   flex: 1;
+  display: flex;
+  align-items: center;
+`;
+const Languages = styled.span`
+  font-size: 14px;
+  cursor: pointer;
+`;
+const SearchContainer = styled.div`
+  display: flex;
+  align-items: center;
+  border: 1px solid #d5d4d4;
+  margin-left: 10px;
+  padding: 2px;
 `;
 const Center = styled.div`
   //width: 33.33%;
@@ -33,8 +48,13 @@ const NavbarComp = () => {
           NavbarComp
         </h2> */}
         <Left>
-          Left Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Aspernatur, inventore.
+          {/* //span languages */}
+          <Languages>EN</Languages>
+          {/* //div for search input */}
+          <SearchContainer>
+            input
+            <SearchIcon />
+          </SearchContainer>
         </Left>
         <Center>
           Cetner Lorem ipsum dolor, sit amet consectetur adipisicing elit.
