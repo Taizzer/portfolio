@@ -23,15 +23,20 @@ const Descri = styled.div`
 `;
 
 const InputWrap = styled.div`
-  width: 50%;
-  height: 40px;
+  height: 45px;
+  width: 45%;
+
+  border: 1px solid #c7c7c7;
   background-color: white;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #c7c7c7;
 `;
 
-const Input = styled.input``;
+const Input = styled.input`
+  border: none;
+  flex: 2;
+  padding-left: 18px;
+`;
 
 const Button = styled.button``;
 
