@@ -1,7 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+//container parenst flex
+// container flex:1
+//child image width 100% height 100%
+
 const Container = styled.div`
+  /* if imgs are big i nned flex 1 with the other need down */
   flex: 1;
   margin: 3px;
   height: 70vh;
@@ -14,6 +19,7 @@ const Container = styled.div`
 `;
 
 const Image = styled.img`
+  /* width 100% is need for flex 1 above i removed it */
   /* width: 100%;
   height: 100%; */
   /* our max- */
@@ -24,23 +30,15 @@ const Image = styled.img`
 
 const Info = styled.div`
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-`;
-
-const Title = styled.h1`
-  color: white;
-  margin-bottom: 20px;
-  background: #fffefe7c;
-  color: black;
-  padding: 5px;
-  border-radius: 5px;
 `;
 
 const Button = styled.button`
@@ -53,6 +51,15 @@ const Button = styled.button`
   color: gray;
   border-radius: 5px;
   border: 1px solid black;
+`;
+
+const Title = styled.h1`
+  color: white;
+  margin-bottom: 20px;
+  background: #fffefe7c;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
 `;
 
 const CategoryItemComp = ({ item }) => {
