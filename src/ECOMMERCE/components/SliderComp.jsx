@@ -64,6 +64,8 @@ const Wrap = styled.div`
   /* transform: translateX(-100px); */
   /* transform: translateX(-70vw); */
   /* transform: translateX(-200vw); */
+  transform: translateX(${(props) => props.slide * -100}vw);
+  transition: all 1s ease;
 `;
 const Slide = styled.div`
   /* border: 2px solid yellow; */
@@ -123,7 +125,13 @@ const Button = styled.button`
 
 const SliderComp = () => {
   const [slide, setSlide] = useState(0);
-  const handleClick = (direction) => {};
+  const handleClick = (direction) => {
+    if (direction === "left") {
+      setSlide(slide > 0 ? slide - 1 : 2);
+    } else {
+      setSlide(slide < 2 ? slide + 1 : 0);
+    }
+  };
 
   return (
     <Container>
@@ -136,7 +144,7 @@ const SliderComp = () => {
           <ArrowRightOutlinedIcon />
         </Arrow>
 
-        <Wrap>
+        <Wrap slide={slide}>
           {sliderItems.map((item) => {
             return (
               <Slide bg={item.bg}>
