@@ -35,6 +35,47 @@ const Info = styled.div`
   justify-content: center;
 `;
 
+const Title = styled.h1`
+  color: white;
+  margin-bottom: 20px;
+  background: #fffefe7c;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+`;
+
+const Image = styled.img`
+  /* width: 100%;
+  height: 100%; */
+  /* our max- */
+  max-width: 250px;
+  max-height: 300px;
+  object-fit: cover;
+`;
+
+const Info = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Title = styled.h1`
+  color: white;
+  margin-bottom: 20px;
+  background: #fffefe7c;
+  color: black;
+  padding: 5px;
+  border-radius: 5px;
+`;
+
+const Button = styled.button``;
+
 const CategoryItemComp = ({ item }) => {
   return (
     <Container>
