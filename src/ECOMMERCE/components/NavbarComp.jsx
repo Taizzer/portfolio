@@ -10,8 +10,6 @@ const WrapperNavbar = styled.div`
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  border: 2px solid red;
 `;
 //as creating 3 divs to split nav into 3 section
 const Left = styled.div``;
