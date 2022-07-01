@@ -74,7 +74,17 @@ const Title = styled.h1`
   border-radius: 5px;
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 10px;
+
+  background-color: white;
+  color: gray;
+`;
 
 const CategoryItemComp = ({ item }) => {
   return (
