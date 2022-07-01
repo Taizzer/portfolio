@@ -12,27 +12,6 @@ const Title = styled.h1`
   margin: 18px;
 `;
 
-const FilterContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
-
-const Filter = styled.div`
-  margin: 18px;
-`;
-
-const FilterText = styled.span`
-  font-size: 18px;
-  font-weight: 400;
-  margin-right: 18px;
-`;
-
-const Select = styled.select`
-  padding: 8px;
-  margin-right: 18px;
-`;
-const Option = styled.option``;
-
 const ProductListPage = () => {
   return (
     <Container>
