@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
@@ -122,6 +122,7 @@ const Button = styled.button`
 `;
 
 const SliderComp = () => {
+  const [slide, setSlide] = useState(0);
   const handleClick = (direction) => {};
 
   return (
@@ -137,17 +138,19 @@ const SliderComp = () => {
 
         <Wrap>
           {sliderItems.map((item) => {
-            <Slide bg="ffd3d3">
-              <ImgContainer>
-                <Image src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/woman_dress/73244/19FW_wed9_col5.png" />
-              </ImgContainer>
+            return (
+              <Slide bg={item.bg}>
+                <ImgContainer>
+                  <Image src={item.img} />
+                </ImgContainer>
 
-              <InfoContainer>
-                <Title> Womens Spring Summer Mini Dress</Title>
-                <Desc>95% Polyester, 5% Elastane</Desc>
-                <Button>Shop</Button>
-              </InfoContainer>
-            </Slide>;
+                <InfoContainer>
+                  <Title> {item.title}</Title>
+                  <Desc>{item.desc}</Desc>
+                  <Button>Shop</Button>
+                </InfoContainer>
+              </Slide>
+            );
           })}
         </Wrap>
       </ContainerWrap>
