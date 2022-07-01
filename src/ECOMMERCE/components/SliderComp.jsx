@@ -47,6 +47,8 @@ const Arrow = styled.div`
   cursor: pointer;
   opacity: 0.6;
   border: 1px solid black;
+  /* z is important */
+  z-index: 2;
 `;
 
 const Wrap = styled.div`
@@ -58,6 +60,10 @@ const Wrap = styled.div`
   /* !!#$$ width off Fixed big bug and now slider bottom will appear */
   background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
   display: flex;
+  /* move slider to the right */
+  /* transform: translateX(-100px); */
+  /* transform: translateX(-70vw); */
+  /* transform: translateX(-200vw); */
 `;
 const Slide = styled.div`
   /* border: 2px solid yellow; */
@@ -116,14 +122,16 @@ const Button = styled.button`
 `;
 
 const SliderComp = () => {
+  const handleClick = (direction) => {};
+
   return (
     <Container>
       <ContainerWrap>
         {/* adding props */}
-        <Arrow direction="left">
+        <Arrow direction="left" onClick={() => handleClick("left")}>
           <ArrowLeftOutlinedIcon />
         </Arrow>
-        <Arrow direction="right">
+        <Arrow direction="right" onClick={() => handleClick("right")}>
           <ArrowRightOutlinedIcon />
         </Arrow>
 
