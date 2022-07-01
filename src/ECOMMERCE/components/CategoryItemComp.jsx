@@ -26,37 +26,6 @@ const Info = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  /* remember width and height */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Title = styled.h1`
-  color: white;
-  margin-bottom: 20px;
-  background: #fffefe7c;
-  color: black;
-  padding: 5px;
-  border-radius: 5px;
-`;
-
-const Image = styled.img`
-  /* width: 100%;
-  height: 100%; */
-  /* our max- */
-  max-width: 250px;
-  max-height: 300px;
-  object-fit: cover;
-`;
-
-const Info = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -76,14 +45,14 @@ const Title = styled.h1`
 
 const Button = styled.button`
   border: none;
+
   cursor: pointer;
   font-weight: 700;
-  border-radius: 5px;
-  border: 1px solid black;
   padding: 10px;
-
   background-color: white;
   color: gray;
+  border-radius: 5px;
+  border: 1px solid black;
 `;
 
 const CategoryItemComp = ({ item }) => {
