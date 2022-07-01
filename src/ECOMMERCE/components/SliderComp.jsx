@@ -4,14 +4,15 @@ import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 
 const Container = styled.div`
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   background: white;
   /* background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%); */
+  width: 100%;
 `;
 
 const ContainerWrap = styled.div`
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 100%;
   height: 70vh;
   /* center */
@@ -20,6 +21,7 @@ const ContainerWrap = styled.div`
   /* background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%); */
   position: relative;
   background: white;
+  overflow: hidden;
 `;
 
 const Arrow = styled.div`
@@ -48,33 +50,69 @@ const Arrow = styled.div`
 `;
 
 const Wrap = styled.div`
-  border: 2px solid green;
+  /* border: 2px solid green; */
   height: 100%;
   /* width added */
-  width: 100%;
+  /* !!#$$ width off Fixed big bug and now slider bottom will appear */
+  /* width: 100%; */
+  /* !!#$$ width off Fixed big bug and now slider bottom will appear */
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  display: flex;
 `;
 const Slide = styled.div`
-  border: 2px solid yellow;
+  /* border: 2px solid yellow; */
   /* width:100% */
-  height: 100%;
+
   display: flex;
   align-items: center;
+  width: 100vw;
+  height: 100%;
+  background-color: #${(props) => props.bg};
 `;
 const ImgContainer = styled.div`
   height: 100%;
   /* auto shrink  */
+
   flex: 1;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 `;
 const Image = styled.img`
   height: 100%;
+
   flex: 1;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin-left: 50%;
+  opacity: 0.8;
 `;
 const InfoContainer = styled.div`
   flex: 1;
+  /* border: 1px solid blue; */
+  padding: 5rem;
+`;
+
+const Title = styled.h1`
+  color: #de6e13;
+  font-size: 40px;
+  font-weight: 800;
+  /* background: #e6e6e6; */
+  padding: 1rem;
+  border-radius: 10px;
+  opacity: 0.8;
+`;
+const Desc = styled.p`
+  font-size: 24px;
+  font-weight: 600;
+  margin: 4rem 0rem;
+  opacity: 0.6;
+`;
+
+const Button = styled.button`
+  padding: 0.5rem 2rem;
+  background: transparent;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
 `;
 
 const SliderComp = () => {
@@ -90,12 +128,38 @@ const SliderComp = () => {
         </Arrow>
 
         <Wrap>
-          <Slide>
+          <Slide bg="ffd3d3">
             <ImgContainer>
-              <Image src="https://m.media-amazon.com/images/I/713NOdX971L._AC_UY550_.jpg" />
+              <Image src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/woman_dress/73244/19FW_wed9_col5.png" />
             </ImgContainer>
 
-            <InfoContainer>info1</InfoContainer>
+            <InfoContainer>
+              <Title> Womens Spring Summer Mini Dress</Title>
+              <Desc>95% Polyester, 5% Elastane</Desc>
+              <Button>Shop</Button>
+            </InfoContainer>
+          </Slide>
+          <Slide bg="d3fffd">
+            <ImgContainer>
+              <Image src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/woman_dress/73244/19FW_wed9_col5.png" />
+            </ImgContainer>
+
+            <InfoContainer>
+              <Title> Popular </Title>
+              <Desc>95% Polyester, 5% Elastane</Desc>
+              <Button>Shop</Button>
+            </InfoContainer>
+          </Slide>
+          <Slide bg="ffa3a3">
+            <ImgContainer>
+              <Image src="https://d1fufvy4xao6k9.cloudfront.net/feed/img/woman_dress/73244/19FW_wed9_col5.png" />
+            </ImgContainer>
+
+            <InfoContainer>
+              <Title> for Winte </Title>
+              <Desc>95% Polyester, 5% Elastane</Desc>
+              <Button>Shop</Button>
+            </InfoContainer>
           </Slide>
         </Wrap>
       </ContainerWrap>
