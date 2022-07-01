@@ -54,6 +54,7 @@ const Center = styled.div`
 
 const Logo = styled.h2`
   font-weight: 100;
+  cursor: pointer;
 `;
 
 // right Section of Navbar
