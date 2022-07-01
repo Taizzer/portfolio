@@ -6,8 +6,10 @@ import CategoryItemComp from "./CategoryItemComp";
 const Container = styled.div`
   color: red;
   display: flex;
-  padding: 20px;
+  padding: 18px;
   justify-content: space-between;
+  border: 3px solid #c3c3c3;
+  border-radius: 12px;
 `;
 
 const CategoriesComp = () => {
