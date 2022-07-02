@@ -3,6 +3,13 @@ import React from "react";
 const Container = styled.div`
   height: 90vh;
   width: 100vw;
+  background: linear-gradient(-225deg, #2cd8d5 0%, #c5c1ff 56%, #ffbac3 100%),
+    url("https://d3nn873nee648n.cloudfront.net/HomeImages/Concept-and-Ideas.jpg")
+      center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Wrapper = styled.div``;
