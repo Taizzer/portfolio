@@ -24,14 +24,41 @@ const Wrapper = styled.div`
   /* background: linear-gradient(-225deg, #47d1cf 0%, #c5c1ff 56%, #ffbac3 100%); */
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  font-weight: 400;
+  font-size: 22px;
+`;
 
-const Form = styled.form``;
+const Form = styled.form`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+`;
 
-const Input = styled.input``;
+const Input = styled.input`
+  flex: 1;
+  min-width: 32%;
+  margin: 18px 8px 0px 0px;
+  padding: 8px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+`;
 
-const Button = styled.button``;
-const Link = styled.a``;
+const Button = styled.button`
+  width: 30%;
+  padding: 15px 20px;
+  background-color: teal;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin-top: 1rem;
+  border-radius: 8px;
+`;
+const Link = styled.a`
+  margin-top: 1rem;
+  cursor: pointer;
+`;
 const LoginPage = () => {
   return (
     <Container>
