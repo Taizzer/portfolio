@@ -5,7 +5,7 @@ import AnnouncementComp from "../components/AnnouncementComp";
 import FooterComp from "../components/FooterComp";
 import NewsletterComp from "../components/NewsletterComp";
 import ProductsComp from "../components/ProductsComp";
-
+import { mobile } from "../responsive";
 const Container = styled.div``;
 
 const Title = styled.h1`
@@ -18,17 +18,20 @@ const FilterContainer = styled.div`
 
 const Filter = styled.div`
   margin: 18px;
+  ${mobile({ width: "0px 18px", display: "flex", flexDirection: "column" })}
 `;
 
 const FilterText = styled.span`
   font-size: 18px;
   font-weight: 400;
   margin-right: 18px;
+  ${mobile({ marginRight: "0px" })}
 `;
 
 const Select = styled.select`
-  padding: 8px;
   margin-right: 18px;
+  padding: 8px;
+  ${mobile({ margin: "8px 0px" })}
 `;
 const Option = styled.option``;
 const ProductListPage = () => {
