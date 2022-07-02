@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import NavbarComp from "../components/NavbarComp";
-import AnnouncementComp from "../components/AnnouncementComp";
 import FooterComp from "../components/FooterComp";
+import AnnouncementComp from "../components/AnnouncementComp";
 import NewsletterComp from "../components/NewsletterComp";
 import ProductsComp from "../components/ProductsComp";
 import { mobile } from "../responsive";
