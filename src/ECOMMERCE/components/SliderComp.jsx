@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
 import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
 import { sliderItems } from "../data";
+import { mobile } from "../responsive";
 const Container = styled.div`
   /* border: 1px solid red; */
   display: flex;
@@ -22,6 +23,7 @@ const ContainerWrap = styled.div`
   position: relative;
   background: white;
   overflow: hidden;
+  ${mobile({ display: "none" })}
 `;
 
 const Arrow = styled.div`
