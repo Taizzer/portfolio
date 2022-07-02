@@ -35,11 +35,6 @@ const Input = styled.input`
   padding: 8px;
 `;
 
-const Agree = styled.span`
-  font-size: 12px;
-  margin: 18px 0px;
-`;
-
 const Button = styled.button`
   width: 30%;
   padding: 15px 20px;
@@ -47,6 +42,11 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   color: white;
+`;
+
+const Agree = styled.span`
+  font-size: 12px;
+  margin: 18px 0px;
 `;
 
 const RegisterPage = () => {
