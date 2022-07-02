@@ -75,7 +75,12 @@ const FilterSize = styled.select`
 
 const FilterSizeOption = styled.option``;
 
-const AddContainer = styled.div``;
+const AddContainer = styled.div`
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
 const AmountWrap = styled.div``;
 
