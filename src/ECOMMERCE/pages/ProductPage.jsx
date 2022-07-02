@@ -37,7 +37,10 @@ const Descr = styled.p`
   margin: 20px 0px;
 `;
 
-const Price = styled.span``;
+const Price = styled.span`
+  font-weight: 100;
+  font-size: 40px;
+`;
 
 const FilterContainer = styled.div``;
 
