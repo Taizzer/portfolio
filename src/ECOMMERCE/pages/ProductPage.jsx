@@ -99,7 +99,13 @@ const Amount = styled.span`
   margin: 0px 4px;
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  background-color: #d8d6d6;
+  padding: 14px;
+  border: 3px solid green;
+  cursor: pointer;
+  font-weight: 400;
+`;
 
 const ProductPage = () => {
   return (
