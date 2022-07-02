@@ -88,7 +88,16 @@ const AmountWrap = styled.div`
   font-weight: 800;
 `;
 
-const Amount = styled.span``;
+const Amount = styled.span`
+  width: 31px;
+  height: 31px;
+  border-radius: 12px;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 4px;
+`;
 
 const Button = styled.button``;
 
