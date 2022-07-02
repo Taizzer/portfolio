@@ -40,7 +40,14 @@ const Agree = styled.span`
   margin: 18px 0px;
 `;
 
-const Button = styled.button``;
+const Button = styled.button`
+  width: 30%;
+  padding: 15px 20px;
+  background-color: teal;
+  border: none;
+  cursor: pointer;
+  color: white;
+`;
 
 const RegisterPage = () => {
   return (
