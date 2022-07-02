@@ -23,7 +23,6 @@ const Wrapper = styled.div`
   border-radius: 16px;
   ${mobile({ width: "70%" })}
 `;
-
 const Title = styled.h1`
   font-weight: 400;
   font-size: 22px;
