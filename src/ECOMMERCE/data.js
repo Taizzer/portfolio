@@ -39,3 +39,26 @@ export const categories = [
     title: "JACKETS",
   },
 ];
+
+export const popularProducts = [
+  {
+    id: 1,
+    img: "https://m.media-amazon.com/images/I/A1yrnhlvkUL._CLa%7C2140%2C2000%7C71bhnBjUrCL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX466._SX._UX._SY._UY_.png",
+  },
+  {
+    id: 2,
+    img: "https://m.media-amazon.com/images/I/B1E1mpDAs4S._CLa%7C2140%2C2000%7C91TPtb3xUJL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UX466_.png",
+  },
+  {
+    id: 3,
+    img: "https://m.media-amazon.com/images/I/A13usaonutL._CLa%7C2140%2C2000%7C91EtkQvJNaL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_UL1500_.png",
+  },
+  {
+    id: 4,
+    img: "https://m.media-amazon.com/images/I/912JkRsplOL._AC_UL1500_.jpg",
+  },
+  {
+    id: 5,
+    img: "https://m.media-amazon.com/images/I/91wZoACMSvL._AC_UL1500_.jpg",
+  },
+];
