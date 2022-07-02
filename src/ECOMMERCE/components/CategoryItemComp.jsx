@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { mobile } from "../responsive";
 //container parenst flex
 // container flex:1
 //child image width 100% height 100%
@@ -26,6 +26,7 @@ const Image = styled.img`
   max-width: 250px;
   max-height: 300px;
   object-fit: cover;
+  ${mobile({ height: "18vh" })}
 `;
 
 const Info = styled.div`
