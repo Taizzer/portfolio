@@ -59,7 +59,14 @@ const FilterHeader = styled.span`
   font-weight: 200;
 `;
 
-const FilterColor = styled.div``;
+const FilterColor = styled.div`
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: ${(props) => props.color};
+  margin: 0px 5px;
+  cursor: pointer;
+`;
 
 const FilterSize = styled.select``;
 
