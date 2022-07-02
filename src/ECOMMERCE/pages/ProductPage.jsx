@@ -9,7 +9,10 @@ import NewsletterComp from "../components/NewsletterComp";
 
 const Container = styled.div``;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  padding: 46px;
+  display: flex;
+`;
 
 const ImgContainer = styled.div``;
 
