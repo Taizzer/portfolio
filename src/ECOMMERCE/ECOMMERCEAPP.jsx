@@ -10,12 +10,12 @@ import RegisterPage from "./pages/RegisterPage";
 //rfc shortcut page starter or rafce
 const ECOMMERCEAPP = () => {
   return (
-    <div style={{ paddingTop: 10 }}>
-      {/* <HomePage /> */}
-      {/* <ProductListPage /> */}
-      {/* <ProductPage /> */}
-      {/* <RegisterPage /> */}
-      {/* <LoginPage /> */}
+    <div style={{ paddingTop: 10, background: "white" }}>
+      <HomePage />
+      <ProductListPage />
+      <ProductPage />
+      <RegisterPage />
+      <LoginPage />
       <CartPage />
     </div>
   );
