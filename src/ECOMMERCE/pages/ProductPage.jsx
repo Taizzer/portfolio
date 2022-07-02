@@ -54,7 +54,10 @@ const Filter = styled.div`
   align-items: center;
 `;
 
-const FilterHeader = styled.span``;
+const FilterHeader = styled.span`
+  font-size: 22px;
+  font-weight: 200;
+`;
 
 const FilterColor = styled.div``;
 
