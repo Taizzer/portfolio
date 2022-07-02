@@ -28,7 +28,12 @@ const Form = styled.form`
   flex-wrap: wrap;
 `;
 
-const Input = styled.input``;
+const Input = styled.input`
+  flex: 1;
+  min-width: 32%;
+  margin: 18px 8px 0px 0px;
+  padding: 8px;
+`;
 
 const Agree = styled.span``;
 
