@@ -35,7 +35,10 @@ const Input = styled.input`
   padding: 8px;
 `;
 
-const Agree = styled.span``;
+const Agree = styled.span`
+  font-size: 12px;
+  margin: 18px 0px;
+`;
 
 const Button = styled.button``;
 
