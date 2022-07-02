@@ -12,7 +12,11 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  width: 35%;
+  padding: 18px;
+  background-color: white;
+`;
 
 const Title = styled.h1``;
 
