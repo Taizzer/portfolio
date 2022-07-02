@@ -1,6 +1,7 @@
 import React from "react";
 
 import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
 import ProductListPage from "./pages/ProductListPage";
 import ProductPage from "./pages/ProductPage";
 import RegisterPage from "./pages/RegisterPage";
@@ -12,7 +13,8 @@ const ECOMMERCEAPP = () => {
       {/* <HomePage /> */}
       {/* <ProductListPage /> */}
       {/* <ProductPage /> */}
-      <RegisterPage />
+      {/* <RegisterPage /> */}
+      <LoginPage />
     </div>
   );
 };
