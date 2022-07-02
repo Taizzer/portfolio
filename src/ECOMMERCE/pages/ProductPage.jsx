@@ -14,7 +14,9 @@ const Wrapper = styled.div`
   display: flex;
 `;
 
-const ImgContainer = styled.div``;
+const ImgContainer = styled.div`
+  flex: 1;
+`;
 
 const Image = styled.img``;
 
