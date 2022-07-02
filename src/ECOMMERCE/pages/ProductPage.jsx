@@ -105,6 +105,9 @@ const Button = styled.button`
   border: 3px solid green;
   cursor: pointer;
   font-weight: 400;
+  &:hover {
+    background-color: #ebe5e5;
+  }
 `;
 
 const ProductPage = () => {
