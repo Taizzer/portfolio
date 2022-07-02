@@ -18,7 +18,11 @@ const ImgContainer = styled.div`
   flex: 1;
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  width: 100%;
+  height: 88vh;
+  object-fit: cover;
+`;
 
 const InfoContainer = styled.div``;
 
