@@ -18,7 +18,10 @@ const Wrapper = styled.div`
   background-color: white;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  font-weight: 400;
+  font-size: 22px;
+`;
 
 const Form = styled.form``;
 
