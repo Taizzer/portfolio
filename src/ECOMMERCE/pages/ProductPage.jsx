@@ -49,7 +49,10 @@ const FilterContainer = styled.div`
   justify-content: space-between;
 `;
 
-const Filter = styled.div``;
+const Filter = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 const FilterHeader = styled.span``;
 
