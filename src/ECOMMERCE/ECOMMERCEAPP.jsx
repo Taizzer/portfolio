@@ -1,4 +1,5 @@
 import React from "react";
+import CartPage from "./pages/CartPage";
 
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
@@ -14,7 +15,8 @@ const ECOMMERCEAPP = () => {
       {/* <ProductListPage /> */}
       {/* <ProductPage /> */}
       {/* <RegisterPage /> */}
-      <LoginPage />
+      {/* <LoginPage /> */}
+      <CartPage />
     </div>
   );
 };
