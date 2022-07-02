@@ -3,8 +3,8 @@ import styled from "styled-components";
 import NavbarComp from "../components/NavbarComp";
 import AnnouncementComp from "../components/AnnouncementComp";
 import FooterComp from "../components/FooterComp";
-import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import AddIcon from "@mui/icons-material/Add";
 import { mobile } from "../responsive";
 const Container = styled.div``;
 
