@@ -7,7 +7,6 @@ import AnnouncementComp from "../components/AnnouncementComp";
 import FooterComp from "../components/FooterComp";
 import NewsletterComp from "../components/NewsletterComp";
 import { mobile } from "../responsive";
-
 const Container = styled.div``;
 
 const Wrapper = styled.div`
