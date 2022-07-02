@@ -1,21 +1,26 @@
 import React from "react";
 import styled from "styled-components";
 const Container = styled.div`
-  height: 90vh;
+  height: 88vh;
   width: 100vw;
-  background: linear-gradient(-225deg, #2cd8d5 0%, #c5c1ff 56%, #ffbac3 100%),
-    url("https://d3nn873nee648n.cloudfront.net/HomeImages/Concept-and-Ideas.jpg")
-      center;
+  /* background: linear-gradient(-225deg, #2cd8d5 0%, #c5c1ff 56%, #ffbac3 100%); */
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* background: white; */
+  /* border: 1px solid red; */
 `;
 
 const Wrapper = styled.div`
-  width: 35%;
-  padding: 18px;
-  background-color: white;
+  /* we can remove the height !! */
+  height: 80%;
+  /* added min- !! */
+  min-width: 30%;
+  padding: 30px;
+  background-color: #fff8f8;
+  border-radius: 16px;
+  /* background: linear-gradient(-225deg, #47d1cf 0%, #c5c1ff 56%, #ffbac3 100%); */
 `;
 
 const Title = styled.h1`
@@ -26,6 +31,7 @@ const Title = styled.h1`
 const Form = styled.form`
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 `;
 
 const Input = styled.input`
@@ -33,6 +39,9 @@ const Input = styled.input`
   min-width: 32%;
   margin: 18px 8px 0px 0px;
   padding: 8px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
 `;
 
 const Button = styled.button`
@@ -42,6 +51,8 @@ const Button = styled.button`
   border: none;
   cursor: pointer;
   color: white;
+  margin-top: 1rem;
+  border-radius: 8px;
 `;
 
 const Agree = styled.span`
@@ -58,11 +69,11 @@ const RegisterPage = () => {
           <Input placeholder="name" />
           <Input placeholder="lastname" />
           <Input placeholder="username" />
-          <Input placeholder="email" />
-          <Input placeholder="password" />
-          <Input placeholder="confirm password" />
+          <Input placeholder="email" type="email" />
+          <Input placeholder="password" type="password" />
+          <Input placeholder="confirm password" type="password" />
           <Agree>
-            Ta gree to <b>PRIVACY POLICY</b>
+            I agree to <b>PRIVACY POLICY</b>
           </Agree>
           <Button>Sign up</Button>
         </Form>
