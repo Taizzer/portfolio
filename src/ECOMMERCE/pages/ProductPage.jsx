@@ -29,7 +29,9 @@ const InfoContainer = styled.div`
   padding: 0px 52px;
 `;
 
-const Title = styled.h1``;
+const Title = styled.h1`
+  font-weight: 200;
+`;
 
 const Descr = styled.p``;
 
