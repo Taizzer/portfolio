@@ -82,12 +82,16 @@ const AddContainer = styled.div`
   justify-content: space-between;
 `;
 
-const AmountWrap = styled.div``;
+const AmountWrap = styled.div`
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+`;
 
 const Amount = styled.span``;
 
 const Button = styled.button``;
-// add it to github
+
 const ProductPage = () => {
   return (
     <Container>
