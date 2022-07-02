@@ -23,7 +23,10 @@ const Title = styled.h1`
   font-size: 22px;
 `;
 
-const Form = styled.form``;
+const Form = styled.form`
+  display: flex;
+  flex-wrap: wrap;
+`;
 
 const Input = styled.input``;
 
