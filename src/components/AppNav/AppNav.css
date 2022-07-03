@@ -7,7 +7,7 @@
   z-index: 99;
   /* max-width: 90%;
   margin: auto; */
-  /flex: 1;
+
   margin-bottom: 5px;
 }
 
@@ -56,7 +56,7 @@
   /* background-color: rgba(255, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(10px); */
-}
+
 /* 
 *** for backdrop apply to the parent ***
  background: lightblue url(klematis.jpg) no-repeat center;
@@ -70,16 +70,6 @@
  /* background-color: rgba(255, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(10px); */
-
-*/ .mainNavUl > li {
-  /* border: 3px solid rgb(49, 212, 8); */
-  border-radius: 5px;
-  padding: 0rem;
-  list-style: none;
-  /* position: relative; */
-  /* outline: 3px solid rgb(255, 253, 253);
-  outline-offset: 3px; */
-}
 
 .mainNavUl > li {
   /* border: 1px solid rgb(49, 212, 8); */
