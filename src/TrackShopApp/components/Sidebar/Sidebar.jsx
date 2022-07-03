@@ -9,7 +9,7 @@ import {
   UilHome,
   UilEstate,
   UilSignOutAlt,
-  UilBars
+  UilBars,
 } from "@iconscout/react-unicons";
 import { SidebarData } from "../../../Data/Data";
 
@@ -17,49 +17,53 @@ const Sidebar = () => {
   const [selected, setSelected] = useState(0);
   const [expand, setExpand] = useState(true);
   return (
-    <>
-      <div className="bar">
-        <UilBars
-          onClick={() => setExpand(!expand)}
-          style={{ cursor: "pointer", background: "" }}
-        />
-      </div>
-      <div className={("Sidebar", expand ? "sidebarMobile" : "sidebarMoHide")}>
-        {/* Logo */}
-        <div className="logo">
-          <img className="img24px" src={Logo} alt="" />
-          <span>
-            L<span>o</span>go
-          </span>
+    <div className="div-side-container">
+      <>
+        <div className="bar">
+          <UilBars
+            onClick={() => setExpand(!expand)}
+            style={{ cursor: "pointer", background: "" }}
+          />
         </div>
-
-        {/* H menu */}
-        <div className="menu">
-          {SidebarData.map((item, index) => {
-            return (
-              <div
-                className={selected === index ? "menuItem active" : "menuItem"}
-                key={index}
-                onClick={() => setSelected(index)}
-              >
-                <item.icon />
-                <span>{item.heading}</span>
-              </div>
-            );
-          })}
-
-          <div className="menuItem">
-            <UilSignOutAlt />
+        <div
+          className={("Sidebar", expand ? "sidebarMobile" : "sidebarMoHide")}
+        >
+          {/* Logo */}
+          <div className="logo">
+            <img className="img24px" src={Logo} alt="" />
+            <span>
+              L<span>o</span>go
+            </span>
           </div>
 
-          {/* the bottom div for
+          {/* H menu */}
+          <div className="menu">
+            {SidebarData.map((item, index) => {
+              return (
+                <div
+                  className={
+                    selected === index ? "menuItem active" : "menuItem"
+                  }
+                  key={index}
+                  onClick={() => setSelected(index)}
+                >
+                  <item.icon />
+                  <span>{item.heading}</span>
+                </div>
+              );
+            })}
+
+            <div className="menuItem">{/* <UilSignOutAlt /> */}</div>
+
+            {/* the bottom div for
 div menu
 div sidebar
 
  */}
+          </div>
         </div>
-      </div>
-    </>
+      </>
+    </div>
   );
 };
 
