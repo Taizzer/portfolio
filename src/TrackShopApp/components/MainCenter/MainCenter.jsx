@@ -5,7 +5,21 @@ import BasicTable from "../Table/Table";
 const MainCenter = () => {
   return (
     <div className="MainCenter">
-      {/* <h4>Dashboard</h4> */}
+      <code
+        style={{
+          background: "white",
+          padding: "0.3rem",
+          borderRadius: "5px",
+          marginLeft: "10px",
+        }}
+      >
+        <a
+          target="_blank"
+          href="https://github.com/Taizzer/portfolio/tree/main/src/TrackShopApp"
+        >
+          https://github.com/Taizzer/portfolio/tree/main/src/TrackShopApp
+        </a>
+      </code>
       <Cards />
 
       <BasicTable />
