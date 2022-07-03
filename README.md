@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://facebook.github.io
  wwwwwnetlify
 ```
 
-# Available Scripts to run it
+## Available Scripts to run it
 
 git clone
 
@@ -27,7 +27,7 @@ Navigate to the project directory
 cd porto
 ```
 
-# in the project directory, you can run:
+## in the project directory, you can run:
 
 ```bash
  yarn start
@@ -39,7 +39,7 @@ or
  npm install
 ```
 
-# React server start
+## React server start
 
 ```bash
  npm start
@@ -48,7 +48,7 @@ or
 Runs the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 
-# Stack:
+## Stack:
 
 Framework: React
 Routing : React Router
