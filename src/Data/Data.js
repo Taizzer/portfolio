@@ -36,8 +36,8 @@ export const CardData = [
   {
     title: "sales",
     color: {
-      backGround: "hsl(0, 0%, 95%)",
-      boxShadow: "0px 5px 5px 0px #c3c3c3",
+      backGround: "hsl(0, 0%, 100%)",
+      boxShadow: "0px 1px 2px 0px #c3c3c3",
     },
     barValue: 70,
     value: "111",
@@ -52,8 +52,8 @@ export const CardData = [
   {
     title: "Revenue",
     color: {
-      backGround: "hsl(0,0%,95%)",
-      boxShadow: "0px 5px 5px 0px #c3c3c3",
+      backGround: "#ffffff",
+      boxShadow: "0px 1px 2px 0px #c3c3c3",
     },
     barValue: 90,
     value: "66,22",
@@ -68,8 +68,8 @@ export const CardData = [
   {
     title: "Expenses",
     color: {
-      backGround: "hsl(0, 0%, 95%)",
-      boxShadow: "0px 5px 5px 0px #c3c3c3",
+      backGround: "hsl(0, 0%, 100%)",
+      boxShadow: "0px 1px 2px 0px #c3c3c3",
     },
     barValue: 50,
     value: "28,22",
