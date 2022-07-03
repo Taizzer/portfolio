@@ -1,5 +1,5 @@
 .MainNav {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   display: flex;
   /* center causing extra movement bug */
   justify-content: center;
@@ -8,10 +8,11 @@
   /* max-width: 90%;
   margin: auto; */
   /flex: 1;
+  margin-bottom: 5px;
 }
 
 .MainNavWrap {
-  border: 1px solid red;
+  /* border: 1px solid rgb(16, 32, 216); */
   padding: 0.1rem;
   display: flex;
   /* center causing extra movement bug */
@@ -37,7 +38,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: 2px;
+  gap: 5px;
   flex: 1;
   border: 3px solid rgba(255, 255, 255, 1);
   /* background: rgb(214, 214, 214, 0.2); */
@@ -45,7 +46,7 @@
   /* background: rgba(44, 161, 153, 0.6); */
 
   /* padding: 5px 3rem 5px 3rem; */
-  padding: 1px 0rem 1px 0rem;
+  padding: 4px 0rem 1px 0rem;
   /* radius 12px or 25px*/
   border-radius: 25px;
 
@@ -69,14 +70,27 @@
  /* background-color: rgba(255, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(10px); */
+
 */ .mainNavUl > li {
-  border: 3px solid rgb(236, 236, 236);
+  /* border: 3px solid rgb(49, 212, 8); */
   border-radius: 5px;
   padding: 0rem;
   list-style: none;
   /* position: relative; */
   /* outline: 3px solid rgb(255, 253, 253);
   outline-offset: 3px; */
+}
+
+.mainNavUl > li {
+  /* border: 1px solid rgb(49, 212, 8); */
+  /border-radius: 5px;
+  padding: 0rem;
+  list-style: none;
+  /* position: relative; */
+  /* outline: 3px solid rgb(255, 253, 253);
+  outline-offset: 3px; */
+  max-width: 200px;
+  height: 60px;
 }
 
 .mainNavUl > li > p > a {
@@ -92,7 +106,7 @@
   font-weight: 200;
   /* padding old is working good */
   /* padding: 2px 7px 2px 7px; */
-  padding: 0px 16px 8px 16px;
+  padding: 0px 10px 4px 12px;
   /* border: 2px solid red; */
   /* display: block;
   margin-top: 5px; */
@@ -107,7 +121,7 @@
   /* width:50%; */
   height: 100%;
   border-radius: 5px;
-  border: 1px solid red;
+  border: 1px solid rgb(201, 198, 198);
 }
 
 .mainNavUl li p {
@@ -120,10 +134,47 @@
 
 /* tablet */
 
-@media and screen (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
 }
 
 /* mobile */
 
-@media and screen (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .MainNav {
+    margin-bottom: 20px;
+  }
+}
+
+/* very small mobile */
+@media screen and (max-width: 434px) {
+  .MainNav {
+    /* background: red; */
+  }
+  .MainNavWrap {
+    width: 350px;
+  }
+
+  .mainNavUl {
+    gap: 0;
+    width: 20%;
+  }
+
+  .mainNavUl > li {
+    width: 300px;
+  }
+
+  .mainNavUl > li > img {
+    width: 67px;
+    /* height: 35px; */
+    /* width:50%; */
+    height: 95%;
+    border-radius: 5px;
+    border: 1px solid rgb(201, 198, 198);
+    margin-left: 8px;
+  }
+
+  .mainNavUl > li > p > a {
+    padding: 2px;
+    font-size: 12px;
+  }
 }
