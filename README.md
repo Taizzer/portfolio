@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://facebook.github.io/create-react-app/docs/running-tests/)
 
-# Deployed on Netlify
+## Deployed on Netlify
 
 [Here the netlify link](https://facebook.github.io/create-react-app/docs/running-tests/)
 
