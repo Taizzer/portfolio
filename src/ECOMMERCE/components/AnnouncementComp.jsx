@@ -12,7 +12,17 @@ const Container = styled.div`
 const AnnouncementComp = () => {
   return (
     <Container>
-      AnnouncementComp my github <span style={{ color: "#ff9090" }}>Sale</span>
+      <code style={{ marginLeft: "10px", color: "black" }}>
+        <a
+          target="_blank"
+          href="https://github.com/Taizzer/portfolio/tree/main/src/TrackShopApp"
+        >
+          https://github.com/Taizzer/portfolio/tree/main/src/ECOMMERCE
+        </a>
+      </code>
+      <span
+        style={{ color: "#ff9090", fontWeight: 100, marginLeft: "0px" }}
+      ></span>
     </Container>
   );
 };
