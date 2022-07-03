@@ -14,9 +14,15 @@ and no need for them here */
 .TrackShopApp {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  background-color: hsl(0, 0%, 90%);
+  /* background-color: hsl(0, 84%, 47%);
+   */
   /* background-color: hsl(103, 69%, 75%); */
   /* background-color: rgba(219, 206, 23, 0.5); */
+  /* background-image: linear-gradient(-20deg, #16c9ab 0%, #7ec3be 100%);
+   */
+
+  /* background-image: linear-gradient(-20deg, #2b5876 0%, #a592ed 100%); */
+
   height: 100vh;
   display: flex;
   justify-content: center;
