@@ -4,13 +4,15 @@ This project was bootstrapped with [Create React App](https://facebook.github.io
 
 # Deployed on Netlify
 
+[Here the netlify link](https://facebook.github.io/create-react-app/docs/running-tests/)
+
 ```bash
- wwwwwnetlify [Here the netlify link](https://facebook.github.io/create-react-app/docs/running-tests/)
+ wwwwwnetlify
 ```
 
 # Available Scripts to run it
 
-# git clone
+git clone
 
 ```bash
 
@@ -53,6 +55,15 @@ Routing : React Router
 Chart : Apex Chart, React circular progressbar
 Styling: Material UI, Styled Components, React Icons, SASS, CSS
 Animations: Framer Motion
+
+```bash
+Framework: React
+Routing : React Router
+Chart : Apex Chart, React circular progressbar
+Styling: Material UI, Styled Components, React Icons, SASS, CSS
+Animations: Framer Motion
+
+```
 
 ## License
 
