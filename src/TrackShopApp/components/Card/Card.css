@@ -32,9 +32,9 @@
   /* border: 1px solid blue !important; */
 }
 .CircularProgressbar-path {
-  stroke: rgba(2, 158, 49, 0.6) !important;
+  stroke: rgba(32, 97, 193, 0.6) !important;
   stroke-width: 12px;
-  filter: drop-shadow(2px 6px 6px green);
+  filter: drop-shadow(2px 3px 3px rgb(24, 39, 149));
 }
 
 .CircularProgressbar {
@@ -48,7 +48,7 @@
 }
 
 .CircularProgressbar-text {
-  fill: green !important;
+  fill: rgb(21, 82, 138) !important;
 }
 
 /* Detail */
@@ -100,7 +100,8 @@
 }
 
 .valueColor {
-  color: rgb(12, 114, 43);
+  color: rgb(38, 149, 28);
+  font-weight: 400 !important;
 }
 
 .ExpandedCard > span:nth-of-type(1) {
