@@ -18,7 +18,8 @@ const AnnouncementComp = () => {
           href="https://github.com/Taizzer/portfolio/tree/main/src/TrackShopApp"
         >
           https://github.com/Taizzer/portfolio/tree/main/src/ECOMMERCE
-        </a>
+        </a>{" "}
+        <span style={{ fontSize: "11px" }}>(Under Construction)</span>
       </code>
       <span
         style={{ color: "#ff9090", fontWeight: 100, marginLeft: "0px" }}
