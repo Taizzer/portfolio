@@ -28,7 +28,7 @@ function CompactCard({ param, setExpanded }) {
       className="CompactCard"
       style={{
         background: param.color.backGround,
-        boxShadow: param.color.boxShadow
+        boxShadow: param.color.boxShadow,
       }}
       onClick={setExpanded}
       layoutId="expandableCard"
@@ -59,7 +59,7 @@ function ExpandedCard({ param, setExpanded }) {
     options: {
       chart: {
         type: "area",
-        height: "auto"
+        height: "auto",
       },
 
       dropShadow: {
@@ -69,28 +69,28 @@ function ExpandedCard({ param, setExpanded }) {
         left: 0,
         blur: 3,
         color: "#000",
-        opacity: 0.31
+        opacity: 0.31,
       },
 
       fill: {
         colors: ["#5d8d91"],
-        type: "gradient"
+        type: "gradient",
       },
 
       dataLabels: {
-        enabled: false
+        enabled: false,
       },
       stroke: {
         curve: "smooth",
-        colors: ["#545a91"]
+        colors: ["#545a91"],
       },
       tooltip: {
         x: {
-          format: "dd/mm/yy HH:mm"
-        }
+          format: "dd/mm/yy HH:mm",
+        },
       },
       grid: {
-        show: true
+        show: true,
       },
       xaxis: {
         type: "datetime",
@@ -101,17 +101,17 @@ function ExpandedCard({ param, setExpanded }) {
           "2018-09-19T03:30:00.000Z",
           "2018-09-19T04:30:00.000Z",
           "2018-09-19T05:30:00.000Z",
-          "2018-09-19T06:30:00.000Z"
-        ]
-      }
-    }
+          "2018-09-19T06:30:00.000Z",
+        ],
+      },
+    },
   };
   return (
     <motion.div
       className="ExpandedCard"
       style={{
         background: param.color.backGround,
-        boxShadow: param.color.boxShadow
+        boxShadow: param.color.boxShadow,
       }}
       layoutId="expandableCard"
     >
@@ -135,7 +135,7 @@ function ExpandedCard2({ param, setExpanded }) {
     options: {
       chart: {
         type: "area",
-        height: "auto"
+        height: "auto",
       },
 
       dropShadow: {
@@ -145,28 +145,28 @@ function ExpandedCard2({ param, setExpanded }) {
         left: 0,
         blur: 3,
         color: "#000",
-        opacity: 0.31
+        opacity: 0.31,
       },
 
       fill: {
         colors: ["#5d8d91"],
-        type: "gradient"
+        type: "gradient",
       },
 
       dataLabels: {
-        enabled: false
+        enabled: false,
       },
       stroke: {
         curve: "smooth",
-        colors: ["#545a91"]
+        colors: ["#545a91"],
       },
       tooltip: {
         x: {
-          format: "dd/mm/yy HH:mm"
-        }
+          format: "dd/mm/yy HH:mm",
+        },
       },
       grid: {
-        show: true
+        show: true,
       },
       xaxis: {
         type: "datetime",
@@ -177,17 +177,17 @@ function ExpandedCard2({ param, setExpanded }) {
           "2018-09-19T03:30:00.000Z",
           "2018-09-19T04:30:00.000Z",
           "2018-09-19T05:30:00.000Z",
-          "2018-09-19T06:30:00.000Z"
-        ]
-      }
-    }
+          "2018-09-19T06:30:00.000Z",
+        ],
+      },
+    },
   };
   return (
     <div
       className="ExpandedCard2"
       style={{
         background: param.color.backGround,
-        boxShadow: param.color.boxShadow
+        boxShadow: param.color.boxShadow,
       }}
       layoutId="expandableCard"
     >
