@@ -13,7 +13,7 @@ import "./FoodApp.css";
 //[ 'all',...spread operator]
 const allCategories = ["All", ...new Set(items.map((item) => item.category))];
 
-console.log(allCategories);
+// console.log(allCategories);
 
 const FoodApp = () => {
   // not this useState([items]); (nu)

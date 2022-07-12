@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ForecastApp.css";
 import axios from "axios";
-import WeatherLondon from "./Components/WeatherLondon";
+import WeatherAll from "./Components/WeatherAll";
 import WeatherInput from "./Components/WeatherInput";
 const ForecastApp = () => {
   return (
@@ -24,20 +24,20 @@ const ForecastApp = () => {
       <div className="ForecastApp">
         <div>{/* <p className="weatherWrap"></p> */}</div>
         <WeatherInput />
-        <WeatherLondon propquery="romania" />
-        <WeatherLondon propquery="london" />
+        <WeatherAll propquery="romania" />
+        <WeatherAll propquery="london" />
 
-        <WeatherLondon propquery="germany" />
-        <WeatherLondon propquery="netherland" />
-        <WeatherLondon propquery="france" />
-        <WeatherLondon propquery="spain" />
-        <WeatherLondon propquery="italy" />
-        <WeatherLondon propquery="ireland" />
-        <WeatherLondon propquery="sweden" />
-        <WeatherLondon propquery="denmark" />
-        <WeatherLondon propquery="belgium" />
-        <WeatherLondon propquery="california" />
-        <WeatherLondon propquery="miami" />
+        <WeatherAll propquery="germany" />
+        <WeatherAll propquery="netherland" />
+        <WeatherAll propquery="france" />
+        <WeatherAll propquery="spain" />
+        <WeatherAll propquery="italy" />
+        <WeatherAll propquery="ireland" />
+        <WeatherAll propquery="sweden" />
+        <WeatherAll propquery="denmark" />
+        <WeatherAll propquery="belgium" />
+        <WeatherAll propquery="california" />
+        <WeatherAll propquery="miami" />
       </div>
     </div>
   );
