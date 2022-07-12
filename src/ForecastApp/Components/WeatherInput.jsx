@@ -17,7 +17,7 @@ const WeatherInput = () => {
   useEffect(() => {
     axios
       .get(
-        `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=finland&days=2&aqi=no`
+        `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=finland&days=2&aqi=no`
       )
       .then((data) => {
         setWeather2(data.data);
@@ -34,7 +34,7 @@ const WeatherInput = () => {
   const weatherSub = () => {
     axios
       .get(
-        `http://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=${weatherInput}&days=2&aqi=no`
+        `https://api.weatherapi.com/v1/current.json?key=${process.env.REACT_APP_WEATHER_API}&q=${weatherInput}&days=2&aqi=no`
       )
       .then((data) => {
         setWeather2(data.data);
