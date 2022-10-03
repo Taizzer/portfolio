@@ -4,6 +4,7 @@ import React, { useContext, useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { ContactContext } from "./ContactContext";
 import { v4 as uuidv4 } from "uuid";
+import Welcome from "../../welcome/welcome";
 
 //submit new contact
 
@@ -105,6 +106,7 @@ const AddForm = () => {
         <Button variant="success" type="submit">
           Add New contact
         </Button>
+        <Welcome />
       </Form>
     </div>
   );
