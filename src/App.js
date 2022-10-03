@@ -14,18 +14,25 @@ import TestAppDelHome from "./TestAppDelHome";
 import ForecastApp from "./ForecastApp/ForecastApp";
 import FoodApp from "./FoodApp/FoodApp";
 import ECOMMERCEAPP from "./ECOMMERCE/ECOMMERCEAPP";
+import ContactApp from "./contactApp/ContactApp";
+import Welcome from "./welcome/welcome";
 //rfc shortcut page starter or rafce
 const App = () => {
   return (
     <div className="App">
       <div className="App-Container">
         <MainNav />
+        {/* <Welcome /> */}
         {/* <Add /> */}
         {/* <ECOMMERCEAPP /> */}
         {/* <FoodApp /> */}
         <Switch>
           <Route path="/" exact>
             <TrackShopApp />
+          </Route>
+
+          <Route path="/contact" exact>
+            <ContactApp />
           </Route>
 
           <Route path="/weatherapi">
