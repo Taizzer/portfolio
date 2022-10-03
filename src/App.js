@@ -9,20 +9,20 @@ import ToggleBtn from "./ToggleBtn";
 import { Switch, Route } from "react-router-dom";
 import TrackShopApp from "./TrackShopApp/TrackShopApp";
 import MainNav from "./components/AppNav/AppNav";
-import TestAppDel from "./TestAppDel";
-import TestAppDelHome from "./TestAppDelHome";
+// import TestAppDel from "./TestAppDel";
+// import TestAppDelHome from "./TestAppDelHome";
 import ForecastApp from "./ForecastApp/ForecastApp";
 import FoodApp from "./FoodApp/FoodApp";
 import ECOMMERCEAPP from "./ECOMMERCE/ECOMMERCEAPP";
 import ContactApp from "./contactApp/ContactApp";
-import Welcome from "./welcome/welcome";
+
 //rfc shortcut page starter or rafce
 const App = () => {
   return (
     <div className="App">
       <div className="App-Container">
         <MainNav />
-        {/* <Welcome /> */}
+
         {/* <Add /> */}
         {/* <ECOMMERCEAPP /> */}
         {/* <FoodApp /> */}
