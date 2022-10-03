@@ -8,23 +8,23 @@ const ContactContextProvidor = (props) => {
       id: uuidv4(),
       name: "sami",
       email: "sami@gmail.com",
-      address: "street usa 88",
-      phone: 20000008950000,
+      address: "street florida 88",
+      phone: 2000000895,
     },
 
     {
       id: uuidv4(),
       name: "dani",
       email: "dani@gmail.com",
-      address: "street usa 22",
-      phone: 118880,
+      address: "street california 22",
+      phone: 2000009857,
     },
     {
       id: uuidv4(),
-      name: "dani",
+      name: "kali",
       email: "kali@gmail.com",
-      address: "rad545",
-      phone: 232324000,
+      address: "DC Street",
+      phone: 2000009857,
     },
   ]);
 
