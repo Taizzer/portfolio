@@ -4,6 +4,7 @@ import Inav1 from "../../imgs/Inav1.PNG";
 import weatherapi from "../../imgs/weatherapi.png";
 import foodmenu from "../../imgs/foodmenu.png";
 import trackchart from "../../imgs/trackchart.png";
+import contact from "../../imgs/contact.png";
 import ecom from "../../imgs/ecom.png";
 import { Link } from "react-router-dom";
 const MainNav = () => {
@@ -15,7 +16,14 @@ const MainNav = () => {
             <img src={trackchart} alt="" />
             {/* <span>image1</span> */}
             <p>
-              <Link to="/">Chart App</Link>
+              <Link to="/">Charts</Link>
+            </p>
+          </li>
+          <li>
+            <img src={contact} alt="" />
+            {/* <span>image1</span> */}
+            <p>
+              <Link to="contact">Contacts</Link>
             </p>
           </li>
 
@@ -23,7 +31,7 @@ const MainNav = () => {
             <img src={weatherapi} alt="" />
             {/* <span>image2</span> */}
             <p>
-              <Link to="weatherapi">Weather Api</Link>
+              <Link to="weatherapi">Weather</Link>
             </p>
           </li>
           <li>
@@ -37,7 +45,7 @@ const MainNav = () => {
             <img src={ecom} alt="" />
             {/* <span>image4</span> */}
             <p>
-              <Link to="ecommerce">E-Commerce</Link>
+              <Link to="ecommerce">E-Commer</Link>
             </p>
           </li>
         </ul>
