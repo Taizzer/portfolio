@@ -7,7 +7,8 @@ This project was bootstrapped with [Create React App](https://facebook.github.io
 [Here the netlify link](https://facebook.github.io/create-react-app/docs/running-tests/)
 
 ```bash
- wwwwwnetlify
+ https://portfolio-pro-view.netlify.app
+
 ```
 
 ## Available Scripts to run it
@@ -24,25 +25,19 @@ https://github.com/Taizzer/portfolio.git
 Navigate to the project directory
 
 ```bash
-cd porto
+cd portfolio/
 ```
 
 ## in the project directory, you can run:
 
 ```bash
- yarn start
-```
-
-or
-
-```bash
- npm install
+ yarn install
 ```
 
 ## React server start
 
 ```bash
- npm start
+ yarn start
 ```
 
 Runs the app in the development mode.
